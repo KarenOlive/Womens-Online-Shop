@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="shortcut icon" href="../icons/favicon.ico" type="image/x-icon" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>All Things Girly Shop</title>
+  </head>
+  <body>
+
+    <nav
+      id="navbar"
+      class="navbar navbar-expand-md bg-light navbar-light justify-content-between fixed-top flex-md-row bd-navbar"
+    >
+      <!-- Brand -->
+      <a class="navbar-brand col-sm-4" href="./index.html" style="color: #9c26ca;">
+        <img src="../icons/favicon.ico" alt="#" width="50" height="50" />
+        MODEST FASHION</a
+      >
+
+      <!-- Toggler/collapsible Button -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapsibleNavbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a href="../index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="./shop.html" class="nav-link">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a href="./about.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="./contact.html" class="nav-link">Contact</a>
+          </li>
+        </ul>
+        
+        <div class="navbar-nav mr-auto">
+          <a href="./cart.html" class="btn btn-light" id="nav-btn">
+            <svg
+              width="1.5em"
+              height="1.5em"
+              viewBox="0 0 16 16"
+              class="bi bi-cart"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+              style="color: #9c26ca;"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
+              /></svg>
+            <span class="badge badge-pill badge-secondary">0</span>
+          </a>
+        </div>
+        
+      </div>
+    </nav>
+
+    <br>
+<!-- Div to be made a short angular app displaying the name of the user -->
+    <div class="jumbotron text-center" >
+      <h1>Welcome! Enjoy your shopping experience</h1>
+    </div>
+    <div class="container justify-content-between shop-header">
+      <ul class="list-group list-group-horizontal-md" id="cat-tabs">
+        <li class="list-group-item"><a href="#dresses" target="_top">Dresses</a></li>
+        <li class="list-group-item"><a href="#shoes" target="_top">Shoes</a></li>
+        <li class="list-group-item">
+          <a href="#pants" target="_top">Pants</a>
+        </li>
+        <li class="list-group-item"><a href="#bags" target="_top">Bags</a></li>
+        <li class="list-group-item"><a href="#watches">Watches</a></li>
+      </ul>
+      <br />
+      <br />
+      <form class="form-inline" id="search-form">
+        <input
+          class="form-control mr-sm-2"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+          id="search-input"
+        />
+        <!-- <button
+          class="btn btn-outline-primary my-2 my-sm-0"
+          type="button"
+          id="search-btn"
+          
+        >
+          Search
+        </button> -->
+      </form>
+    </div>
+
+    <div id="shop">
+
+    <h4 class="display5 cat-heading" id="dresses">Dresses</h4>
+
+    <div class="container-fluid card-deck" style="margin-top: 50px">
+      <div class="card" style="width: 18rem">
+        <img src="../images/dress1.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">All Lace Dress</h5>
+          <p class="card-text">
+            Colors available: As shown Above <br />
+            Price: UGX: 30,000
+          </p>
+          <a href="#" class="btn btn-primary add-to-cart">Add To Cart</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img src="../images/dress2.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Cute Dress</h5>
+          <p class="card-text">
+            Colors available: As shown Above <br />
+            Price: UGX: 28,000
+          </p>
+          <a href="#" class="btn btn-primary add-to-cart">Add To Cart</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img src="../images/dress3.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Casual Dress</h5>
+          <p class="card-text">
+            Colors available: As shown Above <br />
+            Price: UGX: 25,000
+          </p>
+          <a href="#" class="btn btn-primary add-to-cart">Add To Cart</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img src="../images/dress4.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Denim Dress</h5>
+          <p class="card-text">
+            Colors available: Denim Blue <br />
+            Price: UGX: 25,000
+          </p>
+          <a href="#" class="btn btn-primary add-to-cart">Add To Cart</a>
+        </div>
+      </div>
+    </div>
+
+
+
+    <h4 class="display5 cat-heading" id="shoes">Women's Shoes</h4>
+
+    <div class="container-fluid card-deck">
+      <div class="card" style="width: 18rem">
+        <img src="../images/shoes3.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Zip Up Boots</h5>
+          <p class="card-text">
+            Colors available: Black <br />
+            Price: UGX: 35,000
+          </p>
+          <a href="#" class="btn btn-primary shoes-add-to-cart">Add To Cart</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img src="../images/sneakers1.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Cute Kicks</h5>
+          <p class="card-text">
+            Colors available: Cream & Black <br />
+            Price: UGX: 35,000
+          </p>
+          <a href="#" class="btn btn-primary shoes-add-to-cart">Add To Cart</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img src="../images/sneakers2.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Simple Sneakers</h5>
+          <p class="card-text">
+            Colors available: Black, White, Maroon <br />
+            Price: UGX: 35,000
+          </p>
+          <a href="#" class="btn btn-primary shoes-add-to-cart">Add To Cart</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img src="../images/shoes4.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Winter Boots</h5>
+          <p class="card-text">
+            Colors available: As shown Above <br />
+            Price: UGX: 35,000
+          </p>
+          <a href="#" class="btn btn-primary shoes-add-to-cart">Add To Cart</a>
+        </div>
+      </div>
+    </div>
+
+
+
+    <h4 class="display5 cat-heading" id="pants">Women's Pants</h4>
+
+    <div class="container-fluid card-deck">
+      <div class="card" style="width: 18rem">
+        <img src="../images/pants1.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Palazzo Pants</h5>
+          <p class="card-text">Price: UGX: 25,000</p>
+          <a href="#" class="btn btn-primary add-to-cart">Add To Cart</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img src="../images/pants3.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Sweat Pants</h5>
+          <p class="card-text">
+            Colors available: As shown Above <br />
+            Price: UGX: 28,000
+          </p>
+          <a href="#" class="btn btn-primary add-to-cart">Add To Cart</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img src="../images/pants4.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">African Print Pants</h5>
+          <p class="card-text">
+            Colors available: As shown Above <br />
+            Price: UGX: 25,000
+          </p>
+          <a href="#" class="btn btn-primary add-to-cart">Add To Cart</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img src="../images/pants5.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Striped Palazzo Pants</h5>
+          <p class="card-text">Price: UGX: 25,000</p>
+          <a href="#" class="btn btn-primary add-to-cart">Add To Cart</a>
+        </div>
+      </div>
+    </div>
+
+
+
+    <h4 class="display5 cat-heading" id="bags">Women's Bags</h4>
+
+    <div class="container-fluid card-deck" style="margin-bottom: 50px">
+      <div class="card" style="width: 18rem">
+        <img src="../images/bags1.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Hand Bags</h5>
+          <p class="card-text">
+            Price: UGX: 25,000
+          </p>
+          <p class="card-text">
+            Colors available: Brown, Peach, White & Black
+          </p>
+          <a href="#" class="btn btn-primary add-to-cart">Add To Cart</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img src="../images/bags2.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Stylish flower bags</h5>
+        
+          <p class="card-text">
+            Price: UGX: 35,000
+          </p>
+          <p class="card-text">
+            Colors available: As Above 
+          </p>
+          <a href="#" class="btn btn-primary add-to-cart">Add To Cart</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img src="../images/bags3.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Velvet HandBags</h5>
+          <p class="card-text">
+            Price: UGX: 37,000
+
+          </p>
+          <p class="card-text">
+            Colors available: As Above
+          </p>
+          <a href="#" class="btn btn-primary add-to-cart">Add To Cart</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img src="../images/bags4.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">African Print Bags</h5>
+          <p class="card-text">
+            Colors available: Brown, Red, Blue & Black <br />
+            Price: UGX: 28,000
+          </p>
+          <a href="#" class="btn btn-primary add-to-cart">Add To Cart</a>
+        </div>
+      </div>
+    </div>
+
+    
+    <h4 class="display5 cat-heading" id="watches">Women's Watches</h4>
+
+    <div class="container-fluid card-deck" style="margin-bottom: 50px">
+      <div class="card" style="width: 18rem">
+        <img src="../images/watches1.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Crystal Watch</h5>
+          <p class="card-text">
+            Size: Fits most wrists <br />
+            Price: UGX: 30,000
+          </p>
+          <a href="#" class="btn btn-primary add-to-cart" onclick="addItemToCart()">Add To Cart</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img src="../images/watches3.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Smart Watch</h5>
+          <p class="card-text">
+            Colors available: Blue & Black Size: Fits most wrists <br />
+            Price: UGX: 40,000
+          </p>
+          <a href="#" class="btn btn-primary add-to-cart" onclick="addItemToCart()">Add To Cart</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img src="../images/watches4.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Embroided Watch</h5>
+          <p class="card-text">
+            Colors available: As shown above Size: Fits most wrists <br />
+            Price: UGX: 28,000
+          </p>
+          <a href="#" class="btn btn-primary add-to-cart" onclick="addItemToCart()">Add To Cart</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img src="../images/watches5.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Simple Watch</h5>
+          <p class="card-text">
+            Colors available: Pink, Blue, Black & White Size: Fits most wrists
+            <br />
+            Price: UGX: 25,000
+          </p>
+          <a href="#" class="btn btn-primary add-to-cart" onclick="addItemToCart()">Add To Cart</a>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- Trigger/Open The Modal -->
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="container">
+          <p id="modal-info">Please select your desired size</p>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="inlineRadioOptions"
+              id="inlineRadio1"
+              value="option1"
+            />
+            <label class="form-check-label" for="inlineRadio1">XS</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="inlineRadioOptions"
+              id="inlineRadio2"
+              value="option2"
+            />
+            <label class="form-check-label" for="inlineRadio2">S</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="inlineRadioOptions"
+              id="inlineRadio3"
+              value="option3"
+            />
+            <label class="form-check-label" for="inlineRadio3">M</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="inlineRadioOptions"
+              id="inlineRadio3"
+              value="option3"
+            />
+            <label class="form-check-label" for="inlineRadio3">L</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="inlineRadioOptions"
+              id="inlineRadio3"
+              value="option3"
+            />
+            <label class="form-check-label" for="inlineRadio3">XL</label>
+          </div>
+
+          <div class="form-check form-check-inline">
+            <label
+              class="form-check-label"
+              for="quantity"
+              style="padding-right: 10px"
+              >Quantity:
+            </label>
+            <input
+              class="form-check-input"
+              type="number"
+              name="quantity"
+              id="quantity"
+            />
+          </div>
+
+          <br />
+          <a href="./cart.html">
+            <button class="btn btn-light cart-modal-btn" type="submit">
+              Proceed To Cart
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Shoes Modal -->
+    <div id="shoe-modal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="container">
+          <p id="modal-info">Please select your desired size</p>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="inlineRadioOptions"
+              id="inlineRadio1"
+              value="option1"
+            />
+            <label class="form-check-label" for="inlineRadio1">3 (35-36)</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="inlineRadioOptions"
+              id="inlineRadio2"
+              value="option2"
+            />
+            <label class="form-check-label" for="inlineRadio2">4 (37-38)</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="inlineRadioOptions"
+              id="inlineRadio3"
+              value="option3"
+            />
+            <label class="form-check-label" for="inlineRadio3">5 (39)</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="inlineRadioOptions"
+              id="inlineRadio3"
+              value="option3"
+            />
+            <label class="form-check-label" for="inlineRadio3">6 (40)</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="inlineRadioOptions"
+              id="inlineRadio3"
+              value="option3"
+            />
+            <label class="form-check-label" for="inlineRadio3">7 (41)</label>
+          </div>
+
+          <div class="form-check form-check-inline">
+            <label
+              class="form-check-label"
+              for="quantity"
+              style="padding-right: 10px"
+              >Quantity:
+            </label>
+            <input
+              class="form-check-input"
+              type="number"
+              name="quantity"
+              id="quantity"
+            />
+          </div>
+
+          <br />
+          <a href="./cart.html"
+            ><button class="btn btn-light cart-modal-btn" type="submit" onclick="addItemsToCart()">
+              Proceed To Cart
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <button onclick="topFunction()" id="to-top-btn" title="Go to top">
+      <svg
+        width="2em"
+        height="2em"
+        viewBox="0 0 16 16"
+        class="bi bi-arrow-up-circle"
+        fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+        />
+        <path
+          fill-rule="evenodd"
+          d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"
+        />
+      </svg>
+    </button>
+    <script>
+      //Get the button:
+      toTopBtn = document.getElementById("to-top-btn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          toTopBtn.style.display = "block";
+        } else {
+          toTopBtn.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      }
+
+      
+      
+
+    </script>
+    <script src="../scripts/app.js"></script>
+  </body>
+</html>
