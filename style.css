@@ -8,23 +8,19 @@
 body {
   padding-top: 60px;
 }
-/* li .nav-link{
-  border: 1px solid #9b26ca2f;
-  border-radius: 2px;
-} */
+
+#shop{
+  background-color: #e9ecef;
+  background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #e9ecef 20px ), repeating-linear-gradient( #e9ecef, #fff );
+  padding-bottom: 20px;
+}
+
 li .nav-link:hover{
 background-color: #9b26ca2f;
-/* border: 1px solid #9b26ca2f; */
   border-radius: 2px;
-/* border-left: 2px solid #9b26ca2f; */
 }
-/* li.active{
-  color: #eee;
-  background-color: #777;
-} */
-/* .active{
-  background-color: #777;
-} */
+
+
 
 .carousel h2 {
   font-weight: 610;
@@ -62,6 +58,7 @@ background-color: #9b26ca2f;
 #navbar {
   display: flex;
   overflow: hidden;
+  flex-direction: row-reverse;
   /* justify-content: space-around; */
   align-items: center;
   box-shadow: 2px 2px 0px #444;
@@ -295,6 +292,8 @@ footer {
   padding: 20px;
   font-size: 18px;
   flex-wrap: wrap;
+  background-color: #E5E5F7;
+  background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #E5E5E7 20px ), repeating-linear-gradient( #e5e5e5, #fff );
 }
 #contact-form-btn {
   background-color: #9c26ca;
